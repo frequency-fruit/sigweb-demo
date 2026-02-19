@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+/* Tailwind v4 CSS-first configuration */
+@theme {
+  --color-wics-navy: #002a5c;
+  --color-wics-blue-light: #dae7f3;
+  --color-wics-blue-medium: #336699;
+  --color-wics-blue-dark: #004a99;
+  --color-wics-gray-light: #ffffff;
+  --color-wics-gray-medium: #cccccc;
+  --color-wics-gray-sidebar: #e0e0e0;
+  --color-wics-gray-header: #dcdcdc;
+  --color-wics-accent: #c0392b;
+}
+
+/* Tailwind v4 doesn't use 'preflight: false' in a JS config anymore. 
+  Instead, you simply don't @import "tailwindcss/preflight" if you want to skip it.
+  By default, @import "tailwindcss" includes preflight. 
+  To disable it for your monolith, we use the following:
+*/
+
+@layer base {
+  /* Re-defining a custom reset that only applies to our islands */
+  .react-island-container {
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    color: #333333;
+  }
+
+  .react-island-container *,
+  .react-island-container *::before,
+  .react-island-container *::after {
+    box-sizing: inherit;
+  }
+}
+
+@layer components {
+  .wics-card {
+    background-color: var(--color-wics-gray-light);
+    border: 1px solid var(--color-wics-gray-medium);
+    border-radius: 0.125rem; /* rounded-sm */
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05); /* shadow-sm */
+  }
+
+  .wics-header {
+    background-color: var(--color-wics-gray-header);
+    color: #333333;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    border-bottom: 1px solid var(--color-wics-gray-medium);
+  }
+}

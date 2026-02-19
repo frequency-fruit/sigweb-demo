@@ -1,0 +1,8 @@
+{
+  "semi": true,
+  "bracketSameLine": true,
+  "plugins": ["prettier-plugin-organize-imports", "prettier-plugin-tailwindcss"],
+  "tailwindStylesheet": "./src/index.css",
+  "tailwindFunctions": ["tw", "clsx", "classnames", "ctl"],
+  "printWidth": 100
+}
