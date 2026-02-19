@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Islands Test</title>
+  </head>
+  <body>
+    <h1>React Islands Monolith Test Page</h1>
+
+    <div class="card" style="margin-bottom: 1rem;">
+      <h2>User Profile Island</h2>
+      <p>This component is a React "island" rendered by the hydrator.</p>
+      <div data-react-island="UserProfile" data-props='{"name": "John Doe from props"}'></div>
+    </div>
+
+    <div class="card">
+      <h2>Notification Panel Island</h2>
+      <p>This is another, separate React component on the same page.</p>
+      <div data-react-island="NotificationPanel" data-props='{}'></div>
+    </div>
+
+    <div class="card" style="margin-top: 1rem;">
+      <h2>SigWeb Compatibility Demo</h2>
+      <p>This is a React island testing SigWeb wrapper functionality.</p>
+      <div data-react-island="SigWebDemo" data-props='{}'></div>
+    </div>
+
+    <link rel="stylesheet" href="./assets/react-islands/react-islands.css">
+    <script src="./assets/react-islands/react-islands.js"></script>
+    <script src="./assets/samples/react-islands-samples.js"></script>
+
+
+  </body>
+</html>

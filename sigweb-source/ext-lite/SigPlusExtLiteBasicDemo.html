@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Topaz SigPlusExtLite Basic Demo</title>
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- CSS -->
+  <!--Use material design icons-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="SigPlusExtLiteStyles.css" />
+  <!-- JavaScript Libraries -->
+  <script type="text/javascript" src="SigPlusExtLiteBasicDemo.js"></script>
+</head>
+<body onload="GetVersionInfo()">
+<div class="header">
+  <div class="page-header">
+    <span>Topaz SigPlusExtLite Basic Demo</span>
+  </div>
+</div>
+<div class="container">
+
+  <form name="MainForm" class="form" action="#">
+    <div>
+      <canvas id="cnv" name="cnv" width="500" height="300" style="border:1px solid #000000;">
+      </canvas>
+    </div>
+    <br>
+    <p id="extVersion"></p>
+    <p id="nmhVersion"></p>
+    <p id="sigplusVersion"></p>
+    <br>
+    <div class="lblstatus">
+      <p>
+        <b><label id="lblConnectionStatus" name="lblConnectionStatus" /></b>
+      </p>
+    </div>
+    <p>
+    <table>
+      <tr>
+        <td>
+          <input id="btnBasicDemoStartSignEx" name="btnSign" class="button" type="button" value="Sign" onclick="BasicDemoStartSignEx();" />
+        </td>
+        <td>
+          <input id="btnBasicDemoDone" name="btnDone" class="button" type="button" value="Done" onclick="BasicDemoDone();" />
+        </td>
+        <td>
+          <input id="btnBasicDemoClearSign" name="btnClear" class="button" type="button" value="Clear" onclick="BasicDemoClearSign();" />
+        </td>
+      </tr>
+    </table>
+    </br>
+    <textarea name="sigStringData" rows="15" cols="50">SigString:</textarea>
+    <textarea name="sigRawData" rows="15" cols="50">Base64String:</textarea>
+    </p>
+  </form>
+
+</div>
+<div class="footer">
+  © 2023 Topaz Systems, Inc.
+</div>
+</body>
+</html>

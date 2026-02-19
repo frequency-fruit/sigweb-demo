@@ -1,0 +1,110 @@
+﻿body {
+    margin: 0;  
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+    padding: 0;
+}
+.header {
+    background-color: #0f292f;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 3%;
+    width: 100%;
+    background-color: #1e4258;
+    color: #fff;
+    text-align: center;
+}
+
+.page-header {
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+    .page-header span {
+        color: #fff;
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 2em;
+        text-align: left;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .page-header i {
+        font-size: 36px;
+        color: #fff;
+        float: right;
+        cursor: pointer;
+    }
+
+        .page-header i:hover {
+            color: #AED6F1;
+        }
+
+/** Tabs Start */
+.container {
+    padding-top: 60px;
+    padding-left: 300px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;    
+} 
+/** Button Style */
+.button {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #026670; /*#f76c6c; #ed3330;*/
+    padding: 15px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+}
+
+    .button:hover {
+        background: #2d5f5d;
+        /*box-shadow:inset 0 -0.8em 0 -0.35em rgba(0,0,0,0.17);*/
+        color: #fff !important;
+        cursor: pointer;
+    }
+	
+.button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+/** Form Inputs */
+input[type=text], textarea {
+    padding: 10px;
+    margin: 10px 0; /* add top and bottom margin */
+}
+
+    textarea:focus, input:focus {
+        outline-color: #cebc81;
+    }
+
+.font {
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+.dropdown {
+    padding: 5px;
+}
+.card-footer {
+    padding: .75rem 1.25rem;
+    background-color: rgba(0,0,0,.03);
+    border-top: 1px solid rgba(0,0,0,.125);
+	text-align: center!important;
+}
+
