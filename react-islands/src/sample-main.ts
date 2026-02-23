@@ -14,6 +14,9 @@ const registry: ComponentRegistry = {
   LegacySignatureAndDate: lazy(
     () => import("./sample/LegacySignatureAndDate"),
   ) as unknown as React.ComponentType<IslandProps>,
+  StyleDemo: lazy(
+    () => import("./sample/StyleDemo"),
+  ) as unknown as React.ComponentType<IslandProps>,
 };
 
 const syncSamples = () => hydrateIslands(registry);

@@ -11,6 +11,8 @@
   --color-wics-gray-sidebar: #e0e0e0;
   --color-wics-gray-header: #dcdcdc;
   --color-wics-accent: #c0392b;
+  --color-wics-breadcrumb: #778899;
+  --color-wics-banner: #f5f5dc;
 }
 
 /* Tailwind v4 doesn't use 'preflight: false' in a JS config anymore. 
@@ -22,7 +24,7 @@
 @layer base {
   /* Re-defining a custom reset that only applies to our islands */
   .react-island-container {
-    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
     color: #333333;
   }
@@ -48,5 +50,62 @@
     padding: 0.5rem 1rem;
     font-weight: 700;
     border-bottom: 1px solid var(--color-wics-gray-medium);
+  }
+
+  .wics-btn {
+    background-color: white;
+    border: 1px solid var(--color-wics-gray-medium);
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    cursor: pointer;
+  }
+
+  .wics-btn:hover {
+    background-color: #f8f8f8;
+  }
+
+  .wics-badge {
+    background-color: var(--color-wics-accent);
+    color: white;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .wics-tab {
+    background-color: var(--color-wics-blue-medium);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-right: 1px solid var(--color-wics-navy);
+    cursor: pointer;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    margin-right: 2px;
+  }
+
+  .wics-tab-active {
+    background-color: var(--color-wics-blue-dark);
+    font-weight: 700;
+    box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.1);
+  }
+
+  .wics-breadcrumb-bar {
+    background-color: var(--color-wics-breadcrumb);
+    color: white;
+    padding: 0.25rem 1rem;
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .wics-banner-panel {
+    background-color: var(--color-wics-banner);
+    border: 1px solid var(--color-wics-gray-medium);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    position: relative;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
   }
 }
